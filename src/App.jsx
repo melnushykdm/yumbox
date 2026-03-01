@@ -11,27 +11,27 @@ const DELIVERY = 50;
 const DRAWER_W = 420;
 
 const products = [
-  { id: "set-21", title: "Yumbox 21 сет", weight: 1500, price: 799, image: "/img/set21.png" },
-  { id: "set-22", title: "Yumbox 22 сет", weight: 1500, price: 799, image: "/img/set21.png" },
-  { id: "set-23", title: "Yumbox 23 сет", weight: 1500, price: 799, image: "/img/set21.png" },
-  { id: "set-24", title: "Yumbox 24 сет", weight: 1500, price: 799, image: "/img/set21.png" },
-  { id: "set-25", title: "Yumbox 25 сет", weight: 1500, price: 799, image: "/img/set21.png" },
-  { id: "set-26", title: "Yumbox 26 сет", weight: 1500, price: 799, image: "/img/set21.png" },
-  { id: "set-27", title: "Yumbox 27 сет", weight: 1500, price: 799, image: "/img/set21.png" },
-  { id: "set-28", title: "Yumbox 28 сет", weight: 1500, price: 799, image: "/img/set21.png" },
+  { id: "set-21", title: "Yumbox 21 сет", weight: 1500, price: 799, image: "img/set21.png" },
+  { id: "set-22", title: "Yumbox 22 сет", weight: 1500, price: 799, image: "img/set21.png" },
+  { id: "set-23", title: "Yumbox 23 сет", weight: 1500, price: 799, image: "img/set21.png" },
+  { id: "set-24", title: "Yumbox 24 сет", weight: 1500, price: 799, image: "img/set21.png" },
+  { id: "set-25", title: "Yumbox 25 сет", weight: 1500, price: 799, image: "img/set21.png" },
+  { id: "set-26", title: "Yumbox 26 сет", weight: 1500, price: 799, image: "img/set21.png" },
+  { id: "set-27", title: "Yumbox 27 сет", weight: 1500, price: 799, image: "img/set21.png" },
+  { id: "set-28", title: "Yumbox 28 сет", weight: 1500, price: 799, image: "img/set21.png" },
 
 ];
 
 const slidesDesktop = [
-  { id: 1, src: "/img/slide-1.png", alt: "slide 1" },
-  { id: 2, src: "/img/slide-2.png", alt: "slide 2" },
-  { id: 3, src: "/img/slide-3.png", alt: "slide 3" },
+  { id: 1, src: "img/slide-1.png", alt: "slide 1" },
+  { id: 2, src: "img/slide-2.png", alt: "slide 2" },
+  { id: 3, src: "img/slide-3.png", alt: "slide 3" },
 ];
 
 const slidesMobile = [
-  { id: 1, src: "/img/slide-m-1.png", alt: "slide mobile 1" },
-  { id: 2, src: "/img/slide-m-2.png", alt: "slide mobile 2" },
-  { id: 3, src: "/img/slide-m-3.png", alt: "slide mobile 3" },
+  { id: 1, src: "img/slide-m-1.png", alt: "slide mobile 1" },
+  { id: 2, src: "img/slide-m-2.png", alt: "slide mobile 2" },
+  { id: 3, src: "img/slide-m-3.png", alt: "slide mobile 3" },
 ];
 
 export default function App() {
@@ -107,7 +107,7 @@ useEffect(() => {
       {/* HEADER */}
       <header className={`header ${isScrolled ? "scrolled" : ""}`}>
         <div className="headerInner">
-          <img className="logoImg" src="/img/logo.png" alt="yumbox" />
+          <img className="logoImg" src="img/logo.png" alt="yumbox" />
 
           <nav className="nav">
             <a href="#catalog">Каталог</a>
@@ -139,7 +139,7 @@ useEffect(() => {
       {isMenuOpen && <div className="menuOverlay" onClick={closeMenu} />}
       <aside className={`mobileMenu ${isMenuOpen ? "open" : ""}`}>
         <div className="mobileMenuHead">
-          <img className="logoImg logoImgMobile" src="/img/logo.png" alt="yumbox" />
+          <img className="logoImg logoImgMobile" src="img/logo.png" alt="yumbox" />
           <div className="mobileMenuRight">
             <div className="mobileMenuLabel">Меню</div>
             <button className="mobileMenuClose" onClick={closeMenu} aria-label="close menu">
@@ -169,9 +169,9 @@ useEffect(() => {
   </div>
 
   <div className="menuSocials">
-    <img src="/img/linkedin.png" alt="linkedin" />
-    <img src="/img/instagram.png" alt="instagram" />
-    <img src="/img/facebook.png" alt="facebook" />
+    <img src="img/linkedin.png" alt="linkedin" />
+    <img src="img/instagram.png" alt="instagram" />
+    <img src="img/facebook.png" alt="facebook" />
   </div>
 </div>
       </aside>
@@ -182,10 +182,10 @@ useEffect(() => {
         <section className="hero">
           <div className="heroWrap">
             <button className="heroNav heroPrev desktopOnly" aria-label="prev slide">
-              <img src="/img/arrow-left.png" alt="" />
+              <img src="img/arrow-left.png" alt="" />
             </button>
             <button className="heroNav heroNext desktopOnly" aria-label="next slide">
-              <img src="/img/arrow-right.png" alt="" />
+              <img src="img/arrow-right.png" alt="" />
             </button>
 
             <div className="desktopOnly desktopHero">
@@ -227,10 +227,10 @@ useEffect(() => {
 
               <div className="heroMobileNavRow">
                 <button className="heroNavM heroPrevM" aria-label="prev slide">
-                  <img src="/img/arrow-left.png" alt="" />
+                  <img src="img/arrow-left.png" alt="" />
                 </button>
                 <button className="heroNavM heroNextM" aria-label="next slide">
-                  <img src="/img/arrow-right.png" alt="" />
+                  <img src="img/arrow-right.png" alt="" />
                 </button>
               </div>
             </div>
@@ -299,7 +299,7 @@ useEffect(() => {
                   </div>
 
                   <button className="deleteBtn" onClick={() => remove(item.id)} aria-label="remove">
-                    <img src="/img/trash.png" alt="trash" />
+                    <img src="img/trash.png" alt="trash" />
                   </button>
                 </div>
 
