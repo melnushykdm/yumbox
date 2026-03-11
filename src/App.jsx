@@ -103,7 +103,10 @@ useEffect(() => {
   };
 
   return (
-    <div className={`page ${isCartOpen ? "cartOpen" : ""}`} style={{ "--drawerW": `${DRAWER_W}px` }}>
+    <div
+  className={`page ${isCartOpen ? "cartOpen" : ""} ${isMenuOpen ? "menuOpen" : ""}`}
+  style={{ "--drawerW": `${DRAWER_W}px` }}
+>
       {/* HEADER */}
       <header className={`header ${isScrolled ? "scrolled" : ""}`}>
         <div className="headerInner">
