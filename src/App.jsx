@@ -126,8 +126,16 @@ useEffect(() => {
             </button>
 
             <button className="burgerBtn mobileOnly" onClick={toggleMenu} aria-label="menu">
-              {isMenuOpen ? "✕" : "☰"}
-            </button>
+  {isMenuOpen ? (
+    <span className="closeIcon">✕</span>
+  ) : (
+    <span className="burgerIcon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+  )}
+</button>
           </div>
         </div>
       </header>
