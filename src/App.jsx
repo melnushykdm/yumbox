@@ -105,9 +105,7 @@ useEffect(() => {
   return (
     <div
   className={`page ${isCartOpen ? "cartOpen" : ""} ${isMenuOpen ? "menuOpen" : ""}`}
-  style={{ "--drawerW": `${DRAWER_W}px` }}
->
-      {/* HEADER */}
+  style={{ "--drawerW": `${DRAWER_W}px` }}>
       <header className={`header ${isScrolled ? "scrolled" : ""}`}>
         <div className="headerInner">
           <img className="logoImg" src="img/logo.png" alt="yumbox" />
