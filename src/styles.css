@@ -523,6 +523,11 @@ a{ color:inherit; text-decoration:none; }
 @media (max-width: 520px){
   .desktopOnly { display: none !important; }
   .mobileOnly  { display: block !important; }
+  /* сховати cart pill у header на телефоні */
+
+  .header .cartPill{
+  display: none !important;
+}
 
   .cartPill.mobileOnly {
     display: inline-flex !important;
