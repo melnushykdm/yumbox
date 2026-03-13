@@ -1,4 +1,6 @@
-:root { color-scheme: dark; }
+:root { color-scheme: dark;
+--headerH: 104px;
+ }
 
 *{ box-sizing:border-box; }
 html, body{ height:100%; }
@@ -13,9 +15,7 @@ a{ color:inherit; text-decoration:none; }
 
 .page{ min-height:100vh; overflow-x:hidden; }
 
-:root{
-  --headerH: 104px; 
-}
+
 
 .header{
   position: fixed;
@@ -31,19 +31,11 @@ a{ color:inherit; text-decoration:none; }
 }
 
 .header.scrolled{
-  background: rgba(0,0,0,.60);
+  background: rgba(0,0,0,.55);
   backdrop-filter: blur(14px);
 }
 
 
-.container{
-  padding-top: calc(var(--headerH) + 22px);
-  padding-top: 10px;
-}
-
-.header.scrolled{
-  background: rgba(0,0,0,.55);
-}
 .headerInner{
   max-width: 1140px;
   width: 100%;
@@ -127,7 +119,7 @@ a{ color:inherit; text-decoration:none; }
   max-width: 1240px;
   width: 100%;
   margin: 0 auto;
-  padding: 22px 24px 60px;
+  padding: calc(var(--headerH) + 22px) 24px 60px;
 }
 .sectionTitle{
   text-align:center;
@@ -183,13 +175,6 @@ a{ color:inherit; text-decoration:none; }
 .heroPrev{ left: 12px; }
 .heroNext{ right: 12px; }
 
-.heroSwiper .swiper-pagination-bullet{
-  background: rgba(255,255,255,.45);
-  opacity: 1;
-}
-.heroSwiper .swiper-pagination-bullet-active{
-  background: #fff;
-}
 
 .heroSwiperDesktop .swiper-pagination{
   left: 0;
@@ -528,7 +513,7 @@ a{ color:inherit; text-decoration:none; }
   }
 
   .mobileCartInfo{
-    .mobileCartInfo{
+    
     display: none !important;
   }
 
@@ -548,7 +533,7 @@ a{ color:inherit; text-decoration:none; }
   margin-top: 22px;
   height: 48px;
 }
-}
+
 
 
 

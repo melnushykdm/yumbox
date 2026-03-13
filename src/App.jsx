@@ -118,7 +118,7 @@ useEffect(() => {
           </nav>
 
           <div className="headerRight">
-            <button className="cartPill " onClick={openCart}>
+            <button className="cartPill desktopOnly" onClick={openCart}>
               <span className="badgeCount">{totals.count}</span>
               <span>{Math.round(totals.total)} грн</span>
             </button>
