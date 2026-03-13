@@ -264,18 +264,27 @@ useEffect(() => {
                 <div className="productMeta">{p.weight} гр</div>
 
                 <div className="productAction">
-  <div className="productPrice">{p.price} грн</div>
+
+  <div
+    className="productPrice mobilePrice"
+    onClick={() => {
+      if (window.innerWidth <= 520) addToCart(p);
+    }}
+  >
+    {p.price} грн
+  </div>
 
   {qty > 0 ? (
-    <button className="btnInCart hoverBtn" onClick={openCart}>
+    <button className="btnInCart hoverBtn mobileCartInfo" onClick={openCart}>
       <span className="okDot" />
-      В кошику {qty} шт
+      В кошику {qty} шт за {qty * p.price} грн
     </button>
   ) : (
     <button className="btnOutline hoverBtn" onClick={() => addToCart(p)}>
       Додати в кошик
     </button>
   )}
+
 </div>
               </article>
             );

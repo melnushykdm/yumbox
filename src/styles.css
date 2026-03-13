@@ -508,20 +508,46 @@ a{ color:inherit; text-decoration:none; }
 
 /* мобілка */
 @media (max-width: 520px){
-  .productPrice{
-    display: none;
+  .btnOutline.hoverBtn{
+    display: none !important;
   }
 
-  .hoverBtn{
+  .mobilePrice{
     position: static;
     transform: none;
-    opacity: 1;
-    pointer-events: auto;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform .1s ease, opacity .1s ease;
+    padding:6px 10px;
+    border-radius:8px;
+  }
+
+  .mobilePrice:active{
+    transform: scale(0.95);
+    opacity: .7;
+  }
+
+  .mobileCartInfo{
+    .mobileCartInfo{
+    display: none !important;
+  }
+
   }
 
   .productAction{
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+  
+
+  .productAction{
+  position: relative;
+  margin-top: 22px;
+  height: 48px;
+}
 }
 
 
